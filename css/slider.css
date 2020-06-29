@@ -1,20 +1,20 @@
-/* .slider {
-	overflow: hidden;
-} */
+.slider {
+	padding-top: 126px;
+}
 
 #wrapper{
 	width:100%;
+	height: 100vh;
 	margin:0 auto 0;
 	min-height:400px;
-	padding-top: 126px;
 	position:relative;
 	color:#fff;
-	text-shadow:rgba(0,0,0,0.1) 2px 2px 0px;	
+	text-shadow:rgba(0,0,0,0.1) 1px 1px 0px;	
 }
 
 #slider-wrap{
 	width:100%;
-	height:500px;
+	height: 100vh;
 	position:relative;
 	overflow:hidden;
 }
@@ -34,31 +34,6 @@
 	width:100vw;
 	height:100%;	
 }
-
-#slider-wrap ul#slider li > div{
-	position:absolute;
-	top:20px;
-	left:35px;	
-}
-
-#slider-wrap ul#slider li > div h3{
-	font-size:36px;
-	text-transform:uppercase;	
-}
-
-#slider-wrap ul#slider li > div span{
-	font-family: Neucha, Arial, sans serif;
-	font-size:21px;
-}
-
-#slider-wrap ul#slider li i{
-	text-align:center;
-	line-height:400px;
-	display:block;
-	width:100%;
-	font-size:90px;	
-}
-
 
 /*btns*/
 .btns{
@@ -143,9 +118,178 @@
 }
 
 /* bg-sliders */
-
+#slider li {
+	background-position: 50% 50%;
+	background-size: cover;
+}
 #slider li:nth-child(1) {
 	background-image: url(../img/home_slider.jpg);
 }
 
+#slider li:nth-child(2) {
+	background-image: url(../img/home_slider.jpg);
+}
 
+#slider li:nth-child(3) {
+	background-image: url(../img/home_slider.jpg);
+}
+
+#slider li:nth-child(4) {
+	background-image: url(../img/home_slider.jpg);
+}
+
+#slider li:nth-child(5) {
+	background-image: url(../img/home_slider.jpg);
+}
+
+/*sssssssssssssssss*/
+#slider-wrap ul#slider li > div{
+	height: 100%;
+}
+
+#slider-wrap ul#slider li > div h2{
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: #57ccc3;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.slider-subtitle {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: #404040;
+	font-size: 60px;
+	font-weight: 500;
+}
+
+.slider-text {
+	margin-bottom: 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #828282;
+	line-height: 1.8;
+}
+
+.slider-links a{
+	text-decoration: none;
+}
+
+.slider-links .slider-links-read, .slider-links .slider-links-appointment{
+	display: block;
+	padding: 0 35px;
+	height: 46px;
+	border-radius: 20px;
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+	line-height: 40px;
+	transition: all 0.25s ease;
+}
+
+.slider-links .slider-links-read{
+	background-color: #fd556d;
+	border: 3px solid #fd556d;
+
+	color: #fff;
+}
+
+.slider-links .slider-links-read:hover{
+	background-color: #fd556e00;
+	color: #fd556d;
+}
+
+.slider-links .slider-links-appointment{
+	margin-left: 20px;
+	background-color: #55fde100;
+	border: 3px solid #57ccc3;
+	color: #57ccc3;
+}
+
+.slider-links .slider-links-appointment:hover{
+	background-color: #57ccc3;
+	color: #fff;
+}
+
+@media screen and (max-width:1200px) {
+	#slider-wrap ul#slider li > div h2{
+		font-size: 2.8vw;
+	}
+
+	.slider-subtitle {
+		font-size: 4vw;
+	}
+
+	.slider-text {
+		font-size: 12px;
+	}
+
+	.slider-links .slider-links-read, .slider-links .slider-links-appointment{
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width:992px) {
+	.slider-links .slider-links-read, .slider-links .slider-links-appointment{
+		font-size: 10px;
+		height: 40px;
+		line-height: 34px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	#slider-wrap ul#slider li > div h2{
+		font-size: 3vw;
+	}
+
+	.slider-subtitle {
+		font-size: 4.1vw;
+	}
+
+	.slider-text {
+		max-width: 60%;
+		margin-bottom: 15px;
+		font-size: 12px;
+	}
+
+	.slider-links .slider-links-read, .slider-links .slider-links-appointment{
+		padding: 0 12px;
+		border-radius: 17px;
+	}
+
+	.btns{
+		position:absolute;
+		width:30px;
+		height:40px;
+		top:85%;
+		line-height: 37px;
+	}
+}
+
+@media screen and (max-width:575px) {
+	#slider-wrap ul#slider li > div h2{
+		font-size: 5vw;
+	}
+
+	.slider-subtitle {
+		font-size: 7vw;
+	}
+
+	.slider-text {
+		margin-bottom: 15px;
+		font-size: 12px;
+	}
+
+	.slider-links .slider-links-read, .slider-links .slider-links-appointment{
+		padding: 0 15px;
+		border-radius: 20px;
+	}
+
+	.slider{
+		padding-top: 63px;
+	}
+}
